@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<title>全兼容的HTML九宫格布局</title>  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+</head>  
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    function copyText(){
+        var msg="<p>"+$("#text").val()+"</p>";
+        alert(msg);
+        alert($("#text").val());
+        $("#addNewHtml").append(msg);
+
+    }
+</script>
+<style>
+    p{font-size: 20px;border-bottom: 0px}
+    
+</style>
+<body>  
+<html>  
+<head>  
+</head>  
+<body>  
+    <div class="xttblog">  
+        <p>Record:</p>
+        <textarea id="text" rows="10" cols="40"></textarea><br/>
+        
+        <button id="buttonme"  onclick="copyText()">Submit</button>
+    
+    </div>  
+    <div id="addNewHtml"></div>
+</body>  
+
+</html>  
